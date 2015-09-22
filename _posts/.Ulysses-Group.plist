@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>2013-02-08-firstpost.md</string>
+		</array>
+		<array>
+			<string>2013-03-10-secondpost.md</string>
+		</array>
+		<array>
+			<string>2013-03-10-thirdpost.md</string>
+		</array>
+		<array>
+			<string>2013-04-01-fourth-post.md</string>
+		</array>
+		<array>
+			<string>2013-05-01-fifth-post.md</string>
+		</array>
+		<array>
+			<string>2013-06-01-sixth-post.md</string>
+		</array>
+		<array>
+			<string>2013-07-01-seventh-post.md</string>
+		</array>
+		<array>
+			<string>2013-08-01-eigth-post.md</string>
+		</array>
+		<array>
+			<string>2013-09-01-ninth-post.md</string>
+		</array>
+		<array>
+			<string>2013-10-01-tenth-post.md</string>
+		</array>
+		<array>
+			<string>2015-05-08-Process Spotlight-Standup.md</string>
+		</array>
+		<array>
+			<string>year-month-day-title.md</string>
+		</array>
+	</array>
+</dict>
+</plist>

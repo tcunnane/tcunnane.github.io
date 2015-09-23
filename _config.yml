@@ -13,7 +13,7 @@ email: a-mail@mail.mail
 #blog logo
 logo: "/assets/images/df_logo.jpg"
 # blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+cover: "/assets/images/bbc-whiteboard-osos.jpg"
 
 name: ‘Tim Cunnane’
 author: ‘Tim Cunnane’
@@ -21,10 +21,10 @@ author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
-url: "http://myblog.***.***" # the base hostname & protocol for your site
-baseurl: ""
+url: "http://processpl.us” # the base hostname & protocol for your site
+baseurl: "http://processpl.us"
 #used to display twitter cards
-twitter_handle: '@dirkfabisch'
+twitter_handle: ‘@timcunnane’
 
 #fill in disqus shortname to use disqus
 #disqus: disqus-shortname

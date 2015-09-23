@@ -141,7 +141,7 @@ paginate_path: "/page-:num/"
 permalink: pretty
 defaults:
   -
-	scope:
+	# scope:
 	  path: ""
 	  type: "posts"
 	values:

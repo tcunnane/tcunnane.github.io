@@ -2,11 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>childOrder</key>
-	<array>
-		<string>holo-alfa</string>
-	</array>
 	<key>createMarkedFile</key>
 	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>fitvids.js</string>
+		</array>
+		<array>
+			<string>modernizr.js</string>
+		</array>
+	</array>
 </dict>
 </plist>

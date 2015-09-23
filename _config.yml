@@ -1,48 +1,60 @@
-# Base configuration
-permalink: /:title
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-markdown: kramdown
+# Build settings
+markdown: redcarpet
 highlighter: pygments
+gems:
+  - jemoji
+  
+# Site settings
+title: "Mediator"
+description: > # this means to ignore newlines until "email:"
+   A Jekyll theme - Medium inspired
 
-# Title
-name: DOCter
-subtitle: A Jekyll template for project documentation
+email: a-mail@mail.mail
+#blog logo
+logo: "/assets/images/df_logo.jpg"
+# blog cover
+cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-# When using this template with a project page set the baseurl to '/project-name'
-# For user/organization pages set this to an empty string
-# When working locally use jekyll serve --baseurl '' so that you can view everything at localhost:4000
-# See http://jekyllrb.com/docs/github-pages/ for more info
-#baseurl: ''
-baseurl: '/DOCter'
+name: 'Dirk Fabisch'
+author: 'Dirk Fabisch'
+author_image: "/assets/images/author.jpg"
 
-# Author/Organization info to be displayed in the templates
-author:
-  name: Name
-  url: http://localhost:4000
+paginate:	5
 
-# Point the logo URL at a file in your repo or hosted elsewhere by your organization
-logourl:
-logoalt:
+url: "http://myblog.***.***" # the base hostname & protocol for your site
+baseurl: ""
+#used to display twitter cards
+twitter_handle: '@dirkfabisch'
 
-# Navigation
-# List links that should appear in the site sidebar here
-navigation:
-- text: Home
-  url: index.html
-  internal: true
-- text: Example Page
-  url: example_page.html
-  internal: true
-- text: DOCter Repo
-  url: https://github.com/cfpb/DOCter
-  internal: false
+#fill in disqus shortname to use disqus
+#disqus: disqus-shortname
 
-# Repo list
-# List repos that you would like to appear on the homepage here
-repos:
-- name: DOCter
-  description: Jekyll template for docs
-  url: https://github.com/cfpb/DOCter
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/dirkfabisch
+    desc: Follow me on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
 
-# Style Variables
-brand_color: "#2cb34a"
+#  - icon:	facebook
+#    url:	https://facebook.com/???
+#    desc: Connect with me facebook
+#    share_url: https://www.facebook.com/sharer.php
+#    share_title: ?t=
+#    share_link: "&amp;u="
+
+  - icon:	github
+    url:	https://github.com/dirkfabisch
+    desc:	Fork me on github
+    share_url:
+    share_title:
+    share_link:
+
+#  - icon:	google-plus
+#    url:	https://google.com/???
+#    desc:	Add me on google+
+#    share_url:
+#    share_title:
+#    share_link:

@@ -21,7 +21,7 @@ author:
   info:
 
 url: http://steinvc.github.io
-baseurl: "/holo-alfa"
+baseurl: “/tcunnane”
 
 # language attribute in <html> element.
 lang: en
@@ -141,9 +141,9 @@ paginate_path: "/page-:num/"
 permalink: pretty
 defaults:
   -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      excerpt_separator: "<!--more-->"
+	scope:
+	  path: ""
+	  type: "posts"
+	values:
+	  layout: "post"
+	  excerpt_separator: "<!--more-->"

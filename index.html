@@ -1,31 +1,37 @@
 ---
 layout: default
 ---
-<div class="posts">
-  <div class="content full-bleed" id="recent-posts">
-  {% for post in site.posts limit:25 %}<a
-    href="{{site.url}}{{post.url}}" class="post-excerpt{% if post.photo_url %} photo{% endif %}">
-      <div class="padded-content">
-        <div class="title">{{ post.title }}</div>
-      {% if post.photo_url %}
-        <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
-      {% else %}
-        <!-- <div class="title">{{ post.title }}</div> -->
-        <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
-          {{ post.date | date: "%b %Y" }}
-        </info>
-        {% if post.description %}
-        <span class="body">{{ post.description | strip_html }}</span>
-        {% else %}
-        <span class="body">{{ post.excerpt | strip_html }}</span>
-        {% endif %}
-      {% endif %}<!-- post.photo_url -->
-      </div>
-    </a>{% endfor %}
-    <div class="breaker"></div>
-    <div class="end">
-      <a href="{{site.url}}archive/">More...</a>
-    </div>
-  </div>
+
+{% capture index %}{% include index.md %}{% endcapture %}
+{{ index | markdownify }}
+
+{% if site.repos %}
+<section id="repositories">
+  <h2>Repositories</h2>
+  <ul class="repo-list group">
+    <li class="list-icon">
+      <img src="assets/img/octocat.png" width="25px" alt="">
+    </li>
+    {% for repo in site.repos %}
+      <li>
+        <a href="{{ repo.url }}">
+          <h4>{{ repo.name }}</h4>
+          <p>{{ repo.description }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<div id="home">
+  <h2>Posts</h2>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
-{% include pagescript.html %}

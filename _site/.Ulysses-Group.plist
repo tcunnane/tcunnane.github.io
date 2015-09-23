@@ -4,22 +4,16 @@
 <dict>
 	<key>childOrder</key>
 	<array>
-		<string>_posts</string>
-		<string>_site</string>
-		<string>res</string>
-		<string>assets</string>
+		<string>2013</string>
 		<string>about</string>
 		<string>archive</string>
-		<string>_layouts</string>
-		<string>_includes</string>
+		<string>assets</string>
+		<string>res</string>
 	</array>
 	<key>createMarkedFile</key>
 	<false/>
 	<key>sheetClusters</key>
 	<array>
-		<array>
-			<string>_config.yml</string>
-		</array>
 		<array>
 			<string>README.md</string>
 		</array>

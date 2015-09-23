@@ -1,119 +1,157 @@
-#
-# More configuration examples at:
-# http://jekyllrb.com/docs/configuration/
-#
+title:            Notepad
+description:      "Blogging is fun"
+logo:             logo.png
+disqus_shortname: hmfaysal
+share:            true
+dropcap:			true
+# Change url to your domain. Leave localhost server or blank when working locally.
+# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
+# whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
+url:        	  /Notepad
 
-#
-# Jekyll basic configurations
-#
+# Owner/author information
+owner:
+  name:           Hossain Mohd Faysal
+  avatar:         hmfaysal.jpg
+  email:          hmfaysal@alum.mit.edu
+  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
+  description:    Awesome Dude, Awesome Life
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        hmfaysal
+  facebook:       hmfaysal
+  github:         hmfaysal      
+  instagram:      hmfaysal
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    https://plus.google.com/u/0/102602916593522619858
 
-source:         _app
-destination:    _site
-timezone:       Asia/Hong_Kong
-permalink:      /:title.html
-markdown:       kramdown
-highlighter:    rouge
-include:        ["_pages"]
-exclude:        ["_pages/themes"]
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-39365944-7
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
 
-#
-# Jekyll serve settings
-#
+# Links to include in footer navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+    external: false
+    icon: home
+  - title: Featured Posts
+    url: /featured
+  - title: Categories
+    url: /categories
+  - title: About
+    url: /about
 
-port:           4321
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Dhaka
+future:      true
+highlighter: pygments
+markdown:    kramdown
+paginate:    5
+paginate_path: "page:num"
 
-#
-# Jekyll build settings
-#
-
-future:         false
-
-#
-# Additional Markdown settings
-#
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
 
 kramdown:
-  input:                     GFM
-  auto_ids:                  true
-  footnote_nr:               1
-  entity_output:             as_char
-  toc_levels:                1..6
-  smart_quotes:              lsquo,rsquo,ldquo,rdquo
-  enable_coderay:            false
-  hard_wrap:                 false
-  syntax_highlighter:        rouge
-  transliterated_header_ids: true
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
 
-redcarpet:
-  extensions:
-    - footnotes
-    - no_intra_emphasis
-    - smart
-    - space_after_headers
-    - strikethrough
-    - superscript
-    - tables
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
 
-#
-# Jekyll plugins
-#
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://hmfaysal.github.io/Notepad/'
+  relativeLinks: 'http://hmfaysal.github.io/Notepad/links.jsonp'
+  media: 'images'
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
+      - name: "layout"
+        field:
+          element: "hidden"
+          label: "Layout"
+          value: "post"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          value: "An Awesome Headline!"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          placeholder: "Enter Post Description"
+      - name: "headline"
+        field:
+          element: "text"
+          label: "beadline"
+          placeholder: "Enter Post Headline"
+      - name: "modified"
+        field:
+          element: "text"
+          label: "Has this page been modified?"
+          placeholder: "YYYY-MM-DD"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add categories"
+          placeholder: "Choose categories"
+          value: personal
+          options:
+            - name: "Personal"
+              value: personal
+            - name: "Engineering"
+              value: engineering
+            - name: "Physics"
+              value: physics
+            - name: "Psychology"
+              value: psychology
+            - name: "Interesting"
+              value: interesting
+            - name: "Web-Development"
+              value: webdevelopment
+          alterable: true
+      - name: "tags"
+        field:
+          element: "text"
+          label: "Tags"
+          placeholder: "Enter tags, separated by spaces"
+      - name: "imagefeature"
+        field:
+          element: "text"
+          label: "Featured Image"
+          placeholder: "somefile.jpg"
+      - name: "mathjax"
+        field:
+          element: "checkbox"
+          label: "MathJax"
+          value: false
+      - name: "featured"
+        field:
+          element: "checkbox"
+          label: "Featured?"
+          value: false
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "Comments"
+          value: false
 
-gems:
-  - jekyll-last-modified-at
 
-#
-# Almace Scaffolding settings
-#
-
-# Site name
-name:           Almace Scaffolding
-
-# Site description, will appear in the document meta and Atom feed subtitle
-description:    Almace Scaffolding - Super-fast Jekyll framework
-
-# Base URL, this is useful when I need to build site in a subdirectory (like GitHub Pages for Projects), it provides a specific URL prefix, for example, if the production site URL is http://sparanoid.com/lab/version/, set `base` to `/lab/version/24`, without trailing slash.
-# Default:      null
-base:           /lab/amsf
-
-# CSS path used in templates
-# Default:      /assets
-assets:         /assets
-
-# Define feed path. If you use `/feed/index.xml` as feed permalink, `{{ page.url }}` won't pass feed validation with "Self reference doesn't match document location" error
-# Default:      /feed.xml
-feed:           /feed.xml
-
-# Used in atom feed, sitemap, Twitter Cards, and etc. I should use absolute full URLs for these fields
-url:            http://sparanoid.com
-
-# Media assets URL used in posts, without trailing slash. ie. `<img src="{{ site.file }}/image.png">`. In the most cases this URL should be powered by a CDN provider
-file:           //d349cztnlupsuf.cloudfront.net
-
-# Download files URL used in posts, ie. href="{{ site.download }}/package.zip", this should also be a CDN link just like `site.url`. There's no differences in `site.url` and `site.download`, I just use one CDN for post images and another for large download files. That's it. Remove or ignore this if you don't need it
-download:       http://dl.sparanoid.com
-
-# Google Analytics tracking code
-google_analytics:
-  enabled:      false
-  id:           UA-xxxxxxx
-  url:          //www.google-analytics.com/analytics.js
-
-# Site Twitter account handle
-twitter:        sparanoid
-
-# Force UTF-8 encoding, enable this will simply add <meta charset="utf-8"> to the head of your pages
-# Default:      false
-force_utf_8:    false
-
-# Enable this settings to make your feed Daring Fireball-like link blog
-# (This basically change your <link> value to external link you defined in your posts)
-# Default:      false
-link_blog:      false
-
-# Change the value to true to use post excerpt for RSS feeds
-# Default:      false
-rss_excerpt:    false
-
-# Show generator credits
-# Default:      true
-credits:        true
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

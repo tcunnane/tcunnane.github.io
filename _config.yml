@@ -1,7 +1,16 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+title: RedCup
+description: "Redcup: An awesome Theme for Jekyll"
 
-auto: true # automatically update your jekyll
-server: true # runs a local server
-paginate: 10 # pagination basted on number of posts
-exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss'] # files to exclude
+url: http://nadjetey.github.io/redcup/
+port: 3000
+highlighter: pygments
 
+permalink: /:year/:month/:day/:title.html
+markdown: redcarpet
+
+google_analytics: #
+
+owner:
+  name: Nii Adjetey Sowah
+  disqus_shortname: nadjetey
+  twitter: _nadjetey

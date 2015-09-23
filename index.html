@@ -1,75 +1,31 @@
 ---
 layout: default
-title: Mainpage
 ---
-<!-- Content
-    ================================================== -->
-  <div class="content">
-    <main class="container">
-    	<div class="row-fluid">
-    		<section class="content">
-    		  <h1>PROCESS+</h1>
-          <div class="sub-title">You're doing it wrong.</div>
-    		</section>
-    		<ul class="entries">
-    		{% for post in paginator.posts %}
-    		  <li>
-    		    <a href="{{ post.url }}">
-    		        <h3>{{ post.title }}</h3>
-                <time>{{ post.date | date: "%d %B %Y" }}</time>
-                <div>{{ post.content |truncatehtml | truncatewords: 30 }}</div>
-    		    </a>
-    		  </li>
-    		{% endfor %}
-    		</ul>
-    	</div>
-      
-      <div id="post-pagination">
-        {% if paginator.previous_page %}
-        <p class="prev">
-          {% if paginator.previous_page == 1 %}
-          <a href="/">Previous</a>
-          {% else %}
-          <a href="/page{{paginator.previous_page}}"> Previous</a>
-          {% endif %}
-        </p>
+<div class="posts">
+  <div class="content full-bleed" id="recent-posts">
+  {% for post in site.posts limit:25 %}<a
+    href="{{site.url}}{{post.url}}" class="post-excerpt{% if post.photo_url %} photo{% endif %}">
+      <div class="padded-content">
+        <div class="title">{{ post.title }}</div>
+      {% if post.photo_url %}
+        <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
+      {% else %}
+        <!-- <div class="title">{{ post.title }}</div> -->
+        <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+          {{ post.date | date: "%b %Y" }}
+        </info>
+        {% if post.description %}
+        <span class="body">{{ post.description | strip_html }}</span>
         {% else %}
-<!--         <p class="prev disabled">
-          <span>Previous</span>
-        </p> -->
+        <span class="body">{{ post.excerpt | strip_html }}</span>
         {% endif %}
-
-        <ul class="pages">
-          <li class="page">
-            {% if paginator.page == 1 %}
-<!--             <span class="current-page">1</span> -->
-            {% else %}
-<!--             <a href="/">1</a> -->
-            {% endif %}
-          </li>
-
-          {% for count in (2..paginator.total_pages) %}
-          <li class="page">
-            {% if count == paginator.page %}
-            <span class="current-page">{{count}}</span>
-            {% else %}
-            <a href="/page{{count}}">{{count}}</a>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-
-        {% if paginator.next_page %}
-        <p class="next">
-          <a href="/page{{paginator.next_page}}">Next</a>
-        </p>
-        {% else %}
-<!--         <p class="next disabled">
-          <span>Next</span>
-        </p> -->
-        {% endif %}
+      {% endif %}<!-- post.photo_url -->
       </div>
-
-    </main>
+    </a>{% endfor %}
+    <div class="breaker"></div>
+    <div class="end">
+      <a href="{{site.url}}archive/">More...</a>
+    </div>
   </div>
-
+</div>
+{% include pagescript.html %}

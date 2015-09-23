@@ -1,60 +1,56 @@
-# Build settings
-markdown: redcarpet
+# Site wide configuration
+
+title: Site Title
+locale: en_US
+description: Describe your website here.
+logo: site-logo.png
+search: true
+url: http://localhost:4000
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
 highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
 gems:
-  - jemoji
-  
-# Site settings
-title: “Process+”
-description: > # this means to ignore newlines until "email:"
-   You’re doing it wrong.
+  - jekyll-sitemap
 
-email: a-mail@mail.mail
-#blog logo
-logo: "/assets/images/df_logo.jpg"
-# blog cover
-cover: "/assets/images/bbc-whiteboard-osos.jpg"
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  use_coderay: false
 
-name: ‘Tim Cunnane’
-author: ‘Tim Cunnane’
-author_image: "/assets/images/author.jpg"
+mathjax: true
 
-paginate:	5
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
 
-url: "http://processpl.us” # the base hostname & protocol for your site
-baseurl: "http://processpl.us"
-#used to display twitter cards
-twitter_handle: ‘@timcunnane’
 
-#fill in disqus shortname to use disqus
-#disqus: disqus-shortname
-
-# social icons and sharing options
-social:
-  - icon:	twitter
-	url:	https://twitter.com/timcunnane
-	desc: Follow me on twitter
-	share_url: http://twitter.com/share
-	share_title: ?text=
-	share_link: "&amp;url="
-
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
-
-  - icon:	github
-	url:	https://github.com/tcunnane
-	desc:	Fork me on github
-	share_url:
-	share_title:
-	share_link:
-
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
+# Site owner
+owner:
+  name: Your Name
+  avatar: bio-photo.jpg
+  email: you@email.com
+  disqus-shortname:
+  twitter: #username
+  facebook: #username
+  github: #username
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:

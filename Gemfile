@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
-# 'github-pages' includes 'jekyll' gem 
-gem 'github-pages'
-gem 'bourbon'
+gem 'jekyll'
+gem 'jekyll-sitemap'
+gem 'octopress', '~> 3.0.0.rc.12'
+gem 'rouge'

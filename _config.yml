@@ -1,6 +1,6 @@
 
 # The name of your website.
-name: Holo Alfa
+name: Process+
 
 description:
 
@@ -8,19 +8,19 @@ description:
   meta: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content.
 
   # Description of your site. This will show up on the front page.
-  subtitle: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. <a href="https://github.com/steinvc/holo-alfa">&lt;/&gt; on Github</a>.
+  subtitle: You’re doing it wrong. <a href="https://github.com/tcunnane”>&lt;/&gt; on Github</a>.
 
 author:
-  name: Stijn van Cuijk
+  name: Tim Cunnane
 
   # Necessary for contact page
-  email: stijnvcuijk@gmail.com
+  email: tim.cunnane@gmail.com
 
   # Optional text (html) to display after author name. Leave empty if you don't
   # want it.
   info:
 
-url: http://steinvc.github.io
+url: http://tcunnane.github.io
 baseurl: “/tcunnane”
 
 # language attribute in <html> element.

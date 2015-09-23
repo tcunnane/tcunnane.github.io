@@ -2,27 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>childOrder</key>
-	<array>
-		<string>css</string>
-		<string>_includes</string>
-		<string>_sass</string>
-		<string>assets</string>
-		<string>_layouts</string>
-		<string>_posts</string>
-	</array>
 	<key>createMarkedFile</key>
 	<false/>
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>about.md</string>
+			<string>highlight.pack-ck.js</string>
 		</array>
 		<array>
-			<string>_config.yml</string>
+			<string>index-ck.js</string>
 		</array>
 		<array>
-			<string>README.md</string>
+			<string>jquery.fitvids-ck.js</string>
+		</array>
+		<array>
+			<string>jquery.ghostHunter.min-ck.js</string>
+		</array>
+		<array>
+			<string>readingTime.min-ck.js</string>
 		</array>
 	</array>
 </dict>

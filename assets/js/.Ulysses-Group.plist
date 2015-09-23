@@ -4,25 +4,20 @@
 <dict>
 	<key>childOrder</key>
 	<array>
-		<string>css</string>
-		<string>_includes</string>
-		<string>_sass</string>
-		<string>assets</string>
-		<string>_layouts</string>
-		<string>_posts</string>
+		<string>min</string>
 	</array>
 	<key>createMarkedFile</key>
 	<false/>
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>about.md</string>
+			<string>index.js</string>
 		</array>
 		<array>
-			<string>_config.yml</string>
+			<string>jquery.fitvids.js</string>
 		</array>
 		<array>
-			<string>README.md</string>
+			<string>readingTime.min.js</string>
 		</array>
 	</array>
 </dict>

@@ -5,16 +5,16 @@ name: Holo Alfa
 description:
 
   # Description of your site. This will show up in google.
-  meta: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content.
+  meta: Holo Beta is a minimalist, mobile first Jekyll theme with focus on readability and content.
 
   # Description of your site. This will show up on the front page.
-  subtitle: Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. <a href="https://github.com/steinvc/holo-alfa">&lt;/&gt; on Github</a>.
+  subtitle: You're doing it wrong. <a href="https://github.com/steinvc/holo-alfa">&lt;/&gt; on Github</a>.
 
 author:
-  name: Stijn van Cuijk
+  name: Tim
 
   # Necessary for contact page
-  email: stijnvcuijk@gmail.com
+  email: viimein@gmail.com
 
   # Optional text (html) to display after author name. Leave empty if you don't
   # want it.
@@ -22,7 +22,7 @@ author:
 
 # The URL of the homepage of your site (without trailing slash). Leave this
 # empty when you run Jekyll locally.
-url: http://localhost:4000
+url: http://processpl.us
 baseurl: ""
 
 # language attribute in <html> element.
